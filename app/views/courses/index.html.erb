@@ -1,16 +1,16 @@
 <br />
 
 <div class="booyah-box col-10 offset-1">
-  <h1 class="text-center"> Learn Something Today! </h1>
+  <h1 class="text-center" style="font-family: Helvetica Neue; font-weight: 200;"> Learn Something Today! </h1>
   <hr />
 
 <% @courses.each do |course| %>
-  <h2 class="text-center">
+  <h2 class="text-center" style="font-family: Helvetica Neue; font-weight: 200;">
     <%= link_to course.title, course_path(course) %>
   </h2>
   <br />
 
-  <div class="row">
+  <div class="row" style="font-family: Helvetica Neue; font-weight: 300;">
     <div class="col-sm-8 col-12">
       <%= course.description %>
     </div>
