@@ -22,8 +22,8 @@
     </div>
   </div>
 
-  <div class="col-12">
-    <% @course.sections.each do |section| %>
+<div class="col-12">
+   <% @course.sections.each do |section| %>
       <div class="section">
         <%= section.title %>
         <% section.lessons.each do |lesson| %>
@@ -32,7 +32,6 @@
               <b><%= lesson.title %></b>
               -
               <%= lesson.subtitle %>
-            <% end %>
           </div>
         <% end %>
       </div>
