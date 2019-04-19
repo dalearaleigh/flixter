@@ -6,9 +6,14 @@
 
 <% @courses.each do |course| %>
   <h2 class="text-center" style="font-family: Helvetica Neue; font-weight: 200;">
-    <%= link_to course.title, course_path(course) %>
+    <%= link_to course.title, course_path(course), class: 'link' %>
   </h2>
   <br />
+
+<% if @course %>
+  <%= image_tag @course.image.url, class: 'image-fluid' %>
+<br />
+<% end %>
 
   <div class="row" style="font-family: Helvetica Neue; font-weight: 300;">
     <div class="col-sm-8 col-12">
