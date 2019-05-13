@@ -43,13 +43,13 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
     <% if current_course.image.url %>
-      <%= image_tag current_course.image, class: 'img-fluid' %>
+      <%= image_tag current_course.image.url, class: 'img-fluid' %>
       <br />
     <% end %>
 
   <div class="text-center">
 
-    
+
     <!-- Button Trigger Modal: Section -->
     <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#newSectionModal">
       Add New Section
